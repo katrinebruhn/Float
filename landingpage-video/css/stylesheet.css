@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+header {
+  display: flex;
+  /* justify-content bruger jeg for at align vandret*/
+  justify-content: space-between;
+  background: #007782;
+}
+header a {
+  color: whitesmoke;
+  /* det betydeer at jeg fjerner understregning af et ord */
+  text-decoration: none;
+  padding: 15px;
+}
+.vinted {
+  display: flex;
+}
+.topnav {
+  display: flex;
+  justify-content: space-between;
+}
+iframe {
+  margin: 20px;
+}
+h2 {
+  display: flex;
+  /* justify-content bruger jeg for at align vandret*/
+  justify-content: space-between;
+  color: #007782;
+}
+.vinted-footer-boks {
+  background-color: red;
+}
+.discover-footer-boks {
+  background-color: blue;
+}
+.hjælpecenter-footer-boks {
+  background-color: green;
+}
+.tekstboks {
+  margin: 15px;
+}
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+.carousel {
+  position: relative;
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #000;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track img {
+  width: 700px;
+  height: 400px;
+  object-fit: cover;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-size: 28px;
+  border-radius: 50%;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.left {
+  left: 15px;
+}
+
+.right {
+  right: 15px;
+}
